@@ -1,4 +1,46 @@
 @import url("reset.css");
-.title {}
 
-.text {}
+*{
+	color: rgb(49, 49, 49);
+}
+
+h1{
+	color:red;
+}
+[id*="armed-forces"]{
+	color: rgb(40, 173, 40);
+}
+.list > li {
+	color: navy;
+}
+#population,
+#tourism,
+#music,
+#cuisine {
+	color: blue;
+}
+p.text {
+	color: orange;
+}
+.section-02 p {
+	color: darkmagenta;
+}
+.section-03 .text {
+	color: cyan;
+}
+.section-04 * {
+	color: lawngreen;
+}
+.section-04 ~ p {
+	color:brown;
+}
+.section-04 + p {
+	color: saddlebrown;
+}
+.section-05 
+.footer {
+	color: deeppink;
+}
+.footer.link {
+	color: rgba(95, 34, 66, 0.447);
+}
