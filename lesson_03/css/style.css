@@ -46,3 +46,6 @@ p.text {
 .footer.link {
 	color: rgba(95, 34, 66, 0.447);
 }
+.link {
+	color: springgreen;
+}
