@@ -1,10 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+/* Підключення шрифту з Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap');
 
+/* Підключення шрифту за допомогою плагіна */
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap");
 
-@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap");
+/* Підключення шрифту локально */
+@import url("fonts.css");
 
 @import url("reset.css");
 
+.section-portfolio{
+    font-family: "Work Sans", sans-serif;
+    color: #556070;
+    font-size: 18px;
+    line-height: 1.33; 
+}
+.section-portfolio h2 {
+    color: #132238;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.31; /* 50/38 */
+}
+
+.section-business {
+    color: #474464 ;
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+    line-height: 1.75; 
+}
+
+.section-business h2 {
+    color: #1E1B39;
+    font-size: 88px;
+    font-weight: 700;
+    line-height: 1.08;
+}
+
+.section-landing {
+    font-family: "Roboto";
+    color: #505F98;
+    font-size: 18px;
+    line-height: 1.66; /* 30/18 */
+}
+.section-landing h2 {
+    color: #091133;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.32; 
+    letter-spacing: 1px;
+}
