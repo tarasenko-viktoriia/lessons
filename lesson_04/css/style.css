@@ -1,14 +1,85 @@
 /* Підключення шрифту з Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
 
 /* Підключення шрифту за допомогою плагіна */
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Gowun+Batang:regular,700&display=swap");
 
 /* Підключення шрифту локально */
 @import url("fonts.css");
 
 @import url("reset.css");
 
+body {
+    font-family: "Gowun Batang", serif;
+    color: #26215a;
+    line-height: 1.5;
+    font-size: 20px;
+}
+h1, .second-title {
+    font-size: 120px;
+    font-weight: 700;
+    text-align: center;
+    color: #3f5090;
+    text-transform: uppercase;
+}
+
+.second-title {
+    font-size: 50px;
+    text-decoration: overline;
+    text-decoration-style: wavy;
+    text-decoration-color: #786fde;
+    letter-spacing: 12px;
+}
+h1 {
+    text-shadow: 6px -8px 10px #1E1B39;
+}
+a {
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    color:#858585;
+}
+.introduction {
+    font-style: oblique;
+    text-align: justify;
+    line-height: 2;
+    word-spacing: 5px;
+}
+.introduction span {
+    text-decoration: line-through;
+    text-decoration-color: #26215a;
+}
+.main-word {
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    font-weight: 700;
+}
+.first-section {
+    word-spacing: 5px;
+}
+.second-section {
+    text-align: justify;
+    white-space: nowrap;
+    word-spacing: 10px;
+}
+.third-section {
+    text-align: center;
+    word-spacing: 15px;
+}
+.fifth-section, .fourth-section {
+    text-align: right;
+    word-spacing: 15px;
+}
+h3 {
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-shadow: 14px -4px 10px #3f3597, 4px -2px 1px #aa98ef;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+
+}
 .section-portfolio{
     font-family: "Work Sans", sans-serif;
     color: #556070;
