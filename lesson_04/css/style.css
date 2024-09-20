@@ -60,7 +60,6 @@ a {
 }
 .second-section {
     text-align: justify;
-    white-space: nowrap;
     word-spacing: 10px;
 }
 .third-section {
@@ -78,6 +77,7 @@ h3 {
     text-shadow: 14px -4px 10px #3f3597, 4px -2px 1px #aa98ef;
     letter-spacing: 5px;
     text-transform: capitalize;
+    white-space: nowrap;
 
 }
 .section-portfolio{
