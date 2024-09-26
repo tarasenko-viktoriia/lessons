@@ -1,4 +1,91 @@
 @import url("https://fonts.googleapis.com/css?family=Manrope:regular,600,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,800&display=swap");
+
 @import url("reset.css");
 
+h2 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.14; 
+    letter-spacing: -1px;
+    margin-block-end: 26px;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+.section-01 {
+    font-family: "Epilogue", sans-serif;
+    background-color: #FDF0E9;;
+    color: #391400;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.content-text {
+    display: inline-block;
+    width: 40%;
+}
+.content-img {
+    width: 60%;
+    display: inline-block;
+    background: url("../img/pic.png") center / contain no-repeat;
+}
+.text {
+    color: #EF6D58;
+    line-height: 2; 
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-block-end: 20px;
+}
+.text-02 {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-block-end: 24px;
+}
+.list {
+    color: rgba(57, 20, 0, 0.64);
+    line-height: 2;
+}
+.list__item {
+    background: url("../img/check.svg") 0 0 / 32px no-repeat;
+    margin-bottom: 16px;
+    padding-left: 48px;
+}
+
+h1 {
+    font-size: 58px;
+    font-weight: 700;
+    margin-block-end: 14px;
+}
+.section-02 {
+    font-family: "Manrope", sans-serif;
+    color: #fff;
+    background: url("../img/abstract-design.png") center / auto auto no-repeat,linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%), linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%), url(../img/сontainer.png) 0 0/ cover no-repeat;
+    background-color: #141414;
+    text-align: center;
+    line-height: 1.5;
+    min-height: 860px;
+}
+.container-02 {
+    
+}
+.container-02-text p{
+    color:#999;
+    font-size: 18px;
+    margin-block-end: 50px;
+    max-width: 1627px;;
+    margin: 0 auto;
+    padding: 15px;
+    
+}
+.button-icon {
+    background: #E50000 url("../img/icon.svg") 24px / 28px no-repeat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    border-radius: 8px;
+    padding: 18px 24px 18px 55px;
+}
