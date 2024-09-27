@@ -3,6 +3,17 @@
 
 @import url("reset.css");
 
+.header {
+    background-color: #FDF0E9;
+    border: 1px solid #EF6D58;
+    font-family: "Epilogue", sans-serif;
+    color: #391400;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    padding-block: 20px;
+    letter-spacing: 5px;
+}
 h2 {
     font-size: 56px;
     font-weight: 800;
@@ -16,25 +27,26 @@ h2 {
 }
 .section-01 {
     font-family: "Epilogue", sans-serif;
-    background-color: #FDF0E9;;
+    background-color: #FDF0E9;
     color: #391400;
+    padding-block: 20px;
 }
 .container {
+    font-size: 0;
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px;
+    min-height: 551px;
+    background: url("../img/pic.png") right / contain no-repeat;
+    padding-block-start: 70px;
 }
 .content-text {
     display: inline-block;
-    width: 40%;
-}
-.content-img {
-    width: 60%;
-    display: inline-block;
-    background: url("../img/pic.png") center / contain no-repeat;
+    max-width: 470px;
 }
 .text {
     color: #EF6D58;
+    font-size: 16px;
     line-height: 2; 
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -46,6 +58,7 @@ h2 {
     margin-block-end: 24px;
 }
 .list {
+    font-size: 16px;
     color: rgba(57, 20, 0, 0.64);
     line-height: 2;
 }
@@ -63,20 +76,20 @@ h1 {
 .section-02 {
     font-family: "Manrope", sans-serif;
     color: #fff;
-    background: url("../img/abstract-design.png") center / auto auto no-repeat,linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%), linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%), url(../img/сontainer.png) 0 0/ cover no-repeat;
     background-color: #141414;
     text-align: center;
     line-height: 1.5;
-    min-height: 860px;
+    padding-block-end: 25px ;
 }
 .container-02 {
-    
+    min-height: 860px;
+    background: url("../img/abstract-design.png") center / auto auto no-repeat,linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%), linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%), url(../img/сontainer.png) 0 0/ cover no-repeat;
 }
 .container-02-text p{
     color:#999;
     font-size: 18px;
     margin-block-end: 50px;
-    max-width: 1627px;;
+    max-width: 1126px;;
     margin: 0 auto;
     padding: 15px;
     
@@ -88,4 +101,15 @@ h1 {
     line-height: 1.5;
     border-radius: 8px;
     padding: 18px 24px 18px 55px;
+}
+
+.footer {
+    font-family: "Epilogue", sans-serif;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding-block: 20px;
+    letter-spacing: 5px;
+    background-color: #141414;
+    border: 1px solid #FDF0E9;
 }
