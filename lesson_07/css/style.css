@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,700&display=swap");
+
+@import url("reset.css");
+
+.section-01 {
+   font-family: "DM Sans", sans-serif;
+   font-size: 24px;
+   line-height: 1.75;
+}
+.container-item {
+   width: 50%;
+}
+
+.container-item > * {
+   margin-bottom: 75px;
+}
+
+.container-item >*:last-child {
+   margin-bottom: 0;
+}
+.container-01 {
+   max-width: 1740px;
+   margin: 0 auto;
+   padding: 15px;
+}
+.container-01 h2{
+   color: #1E1B39;
+   font-size: 42px;
+   font-weight: 700;
+   line-height: 1.28;
+}
+.text {
+   font-size: 20px;
+   line-height: 1.1;
+   color: #4A3AFF;
+   font-weight: 700;
+}
+.content-text {
+   color: #6E6C83;
+}
+.content-01 > *, 
+.content-02 > *, 
+.content-03 > * {
+   margin-bottom: 8px;
+}
+
+.content-01 > *:last-child,
+.content-02 > *:last-child,
+.content-03 > *:last-child {
+   margin-bottom: 0;
+}
+
+.content-01 h2::after{
+   content: "";
+   display: inline-block;
+   background: url("../img/emoji.png");
+   background-size: contain;
+   width: 40px;
+   height: 40px;
+   vertical-align: middle;
+   margin-inline-start: 10px;
+}
+.content-02 h2::after {
+   content: "";
+   display: inline-block;
+   background: url("../img/emoj-2.png");
+   background-size: contain;
+   width: 40px;
+   height: 40px;
+   vertical-align: middle;
+   margin-inline-start: 10px;
+}
+.content-03 h2::after {
+   content: "";
+   display: inline-block;
+   background: url("../img/emoji-3.png");
+   background-size: contain;
+   width: 40px;
+   height: 40px;
+   vertical-align: middle;
+   margin-inline-start: 5px;
+}
+
+.container-item-02 {
+   max-width: 543px;;
+   border-radius: 56px;
+   background: #F0F0F6;
+   padding: 24px 24px 58px 24px;
+}
+.list {
+   padding-top: 34px;
+   padding-left: 13px;
+}
+.price-item {
+   color: #fff;
+   border-radius: 34px;
+   background: #4A3AFF;
+   overflow: hidden;
+   text-align: center;
+   max-width: 495px;
+   padding: 45px;
+   font-weight: 700;
+}
+.price-item p:first-child {
+   font-size: 30px;
+   line-height: 1.06;
+   margin-bottom: 2px;
+}
+.price-item p:nth-child(2){
+   font-size: 116px;
+   line-height: 1.03;
+}
+.price-item p:last-child{
+   font-size: 20px;
+   line-height: 1.1;
+   opacity: 0.6;
+}
+.price-item > * {
+   margin-bottom: 6px;
+}
+.price-item > *:last-child {
+   margin-bottom: 0;
+}
+
+.items {
+   color: #1E1B39;
+   font-size: 28px;
+   font-weight: 700;
+   line-height: 1.35;
+}
+
+.item::before {
+   content: url("../img/check-circle.png");
+   vertical-align: middle;
+   margin-inline-end: 14px;
+}
+.items > * {
+   margin-bottom: 26px;
+}
+.items>*:last-child {
+   margin-bottom: 0;
+}
+
+.section-03 {
+   background-color: #FDF0E9;
+   font-family: "Epilogue", sans-serif;
+   line-height: 2;
+}
+.section-03-content {
+   max-width: 570px;
+   margin: 0 auto;
+}
+.bloc-01 p:first-child{
+   margin-block-end: 32px;
+   font-size: 20px;
+   line-height: 1.6;
+}
+.bloc-01 p:nth-child(2) {
+   margin-block-end: 51px
+}
+.bloc-02 p:first-of-type {
+   color: rgba(57, 20, 0, 0.64);
+   margin-block-end: 34px;
+}
+
+.bloc-02 p:last-child {
+   margin-block-end: 65px;
+}
+.bloc-03 p:first-of-type:not(.quote p:first-child) {
+   color: rgba(57, 20, 0, 0.64);
+   margin-block-end: 28px;
+}
+.bloc-03 p:nth-of-type(2) {
+   margin-block-end: 69px;
+}
+.bloc-03 p:nth-of-type(3){
+   color: rgba(57, 20, 0, 0.64);
+   margin-block-end: 0;
+}
+.container-03 img {
+   display: block;
+   max-width: 970px;
+   margin: 0 auto;
+   margin-block-end: 74px;
+}
+.container-03 {
+   max-width: 1210px;
+   margin: 0 auto;
+   padding: 20px;
+   color: #391400;
+}
+.container-03 p:nth-of-type(even) {
+   color:  rgba(57, 20, 0, 0.64);
+}
+.container-03 h3{
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 1.33;
+   margin-block-end: 35px;
+}
+.quote {
+   border-radius: 6px;
+   background-color: #F9E5DA;
+   padding: 40px 32px 32px;
+   margin-block-end: 76px;
+}
+.quote p{
+   font-size: 20px;
+   line-height: 1.6;   
+   background: url("../img/shape.svg") 0 0 /48px 36px  no-repeat;
+   padding-left: 80px;
+}
+.unordered-list{
+   margin-block-end: 32px;
+}
+.unordered-item::before{
+   content: url("../img/oval.svg");
+   margin-inline-end: 16px;
+}
+.ordered-list {
+   counter-reset: list-counter;
+   margin-block-end: 32px;
+}
+.ordered-item::before {
+   counter-increment: list-counter;
+   content: counter(list-counter)". ";
+   display: inline-block;
+   margin-right: 5px;
+}
+.game {
+   padding: 40px;
+   background-image: url("../img/back.jpg");
+}
+.section-04 {
+   width: 800px;
+   height: 800px;
+   background-color: #1E1B39;
+   margin: 0 auto;
+   padding: 30px;
+}
+
+.start, .finish {
+   width: 40px;
+   height: 40px;
+   background-color: #6E6C83;
+   font-weight: 700;
+   color: #F9E5DA;
+   text-align: center;
+   font-size: 32px;
+
+}
+.finish {
+   margin-left: 625px;
+   margin-top: -6px;
+   display: none;
+}
+.level-01 {
+   width: 700px;
+   height: 40px;
+   background-color: #6E6C83;
+   display: none;
+}
+.level-02 {
+   width: 40px;
+   height: 60px;
+   background-color: #6E6C83;
+   display: none;
+   margin-left: 660px;
+}
+.level-03 {
+   width: 500px;
+   height: 30px;
+   background-color: #6E6C83;
+   display: none;
+   margin-left: 200px;
+}
+.level-04 {
+   width: 30px;
+   height: 100px;
+   background-color: #6E6C83;
+   display: none;
+   margin-left: 200px;
+}
+.level-05 {
+   width: 500px;
+   height: 25px;
+   background-color: #6E6C83;
+   display: none;
+   margin-left: 200px;
+}
+.level-06 {
+   width: 25px;
+   height: 180px;
+   background-color: #6E6C83;
+   display: none;
+   margin-left: 675px;
+}
+.level-07 {
+   width: 600px;
+   height: 25px;
+   background-color: #6E6C83;
+   display: none;
+   margin-left: 100px;
+}
+.level-08 {
+   width: 20px;
+   height: 150px;
+   background-color: #6E6C83;
+   display: none;
+   margin-left: 100px;
+}
+.level-09 {
+   width: 550px;
+   height: 20px;
+   background-color: #6E6C83;
+   display: none;
+   margin-left: 100px;
+}
+.level-10 {
+   width: 15px;
+   height: 65px;
+   background-color: #6E6C83;
+   display: none;
+   margin-left: 635px;
+}
+
+.start:hover+.level-01,
+.level-01:hover+.level-02,
+.level-02:hover+.level-03,
+.level-03:hover+.level-04,
+.level-04:hover+.level-05,
+.level-05:hover+.level-06,
+.level-06:hover+.level-07,
+.level-07:hover+.level-08,
+.level-08:hover+.level-09,
+.level-09:hover+.level-10,
+.level-10:hover+.finish {
+   display: block;
+}
+
+.level-01:hover,
+.level-02:hover,
+.level-03:hover,
+.level-04:hover,
+.level-05:hover,
+.level-06:hover,
+.level-07:hover,
+.level-08:hover,
+.level-09:hover,
+.level-10:hover,
+.finish:hover
+{
+   display: block;
+}
+
+.section-04:has(.level-02:hover) .level-01,
+.section-04:has(.level-03:hover) .level-01,
+.section-04:has(.level-03:hover) .level-02,
+.section-04:has(.level-04:hover) .level-01,
+.section-04:has(.level-04:hover) .level-02,
+.section-04:has(.level-04:hover) .level-03,
+.section-04:has(.level-05:hover) .level-01,
+.section-04:has(.level-05:hover) .level-02,
+.section-04:has(.level-05:hover) .level-03,
+.section-04:has(.level-05:hover) .level-04,
+.section-04:has(.level-06:hover) .level-01,
+.section-04:has(.level-06:hover) .level-02,
+.section-04:has(.level-06:hover) .level-03,
+.section-04:has(.level-06:hover) .level-04,
+.section-04:has(.level-06:hover) .level-05,
+.section-04:has(.level-07:hover) .level-01,
+.section-04:has(.level-07:hover) .level-02,
+.section-04:has(.level-07:hover) .level-03,
+.section-04:has(.level-07:hover) .level-04,
+.section-04:has(.level-07:hover) .level-05,
+.section-04:has(.level-07:hover) .level-06,
+.section-04:has(.level-08:hover) .level-01,
+.section-04:has(.level-08:hover) .level-02,
+.section-04:has(.level-08:hover) .level-03,
+.section-04:has(.level-08:hover) .level-04,
+.section-04:has(.level-08:hover) .level-05,
+.section-04:has(.level-08:hover) .level-06,
+.section-04:has(.level-08:hover) .level-07,
+.section-04:has(.level-09:hover) .level-01,
+.section-04:has(.level-09:hover) .level-02,
+.section-04:has(.level-09:hover) .level-03,
+.section-04:has(.level-09:hover) .level-04,
+.section-04:has(.level-09:hover) .level-05,
+.section-04:has(.level-09:hover) .level-06,
+.section-04:has(.level-09:hover) .level-07,
+.section-04:has(.level-09:hover) .level-08,
+.section-04:has(.level-10:hover) .level-01,
+.section-04:has(.level-10:hover) .level-02,
+.section-04:has(.level-10:hover) .level-03,
+.section-04:has(.level-10:hover) .level-04,
+.section-04:has(.level-10:hover) .level-05,
+.section-04:has(.level-10:hover) .level-06,
+.section-04:has(.level-10:hover) .level-07,
+.section-04:has(.level-10:hover) .level-08,
+.section-04:has(.level-10:hover) .level-09, 
+.section-04:has(.finish:hover) .level-01,
+.section-04:has(.finish:hover) .level-02,
+.section-04:has(.finish:hover) .level-03,
+.section-04:has(.finish:hover) .level-04,
+.section-04:has(.finish:hover) .level-05,
+.section-04:has(.finish:hover) .level-06,
+.section-04:has(.finish:hover) .level-07,
+.section-04:has(.finish:hover) .level-08,
+.section-04:has(.finish:hover) .level-09,
+.section-04:has(.finish:hover) .level-10
+{
+   display: block;
+}
+
+.footer, .header {
+   font-family: "Epilogue", sans-serif;
+   color: #fff;
+   font-size: 18px;
+   text-align: center;
+   padding-block: 20px;
+   letter-spacing: 5px;
+   background-color: #141414;
+   border: 1px solid #FDF0E9;
+}
+.header {
+   font-size: 48px;
+}
