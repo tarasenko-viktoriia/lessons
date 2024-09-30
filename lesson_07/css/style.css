@@ -89,7 +89,6 @@
    padding: 24px 24px 58px 24px;
 }
 .list {
-   padding-top: 34px;
    padding-left: 13px;
 }
 .price-item {
@@ -101,6 +100,7 @@
    max-width: 495px;
    padding: 45px;
    font-weight: 700;
+   margin-bottom: 34px;
 }
 .price-item p:first-child {
    font-size: 30px;
