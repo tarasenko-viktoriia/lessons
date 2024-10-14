@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,700&display=swap");
+
+
+@import url("reset.css");
+
+.wrapper{
+    font-family: "Epilogue", sans-serif;
+    color: #391400;
+    min-height: 100%;
+    overflow: clip;
+    background-color:#FDF0E9;
+}
+.header{
+    text-align: center;
+    padding-block: 25px;
+}
+.header__title {
+    font-size: 56px;
+    font-weight: 700;
+    text-shadow: 3px 4px 3px rgb(46, 44, 103);
+}
+.hero {
+    background-color: #28293E;
+}
+.hero__container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.image{
+}
+.hero__img {
+    width: 50%;
+    position: relative;
+
+}
+.image__block {
+    background-color: #B550F8;
+    border-radius: 50% 50% 10px 10px;
+    max-width: 246px;
+    max-height: 305px;
+}
+.image__block--color {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: #F7CC47;
+}
+.image__oval {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #32334cb9;
+    width: 370px;
+    height: 370px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+}
+.image__strars {
+    top: 75px;
+    right: 180px;
+    position: absolute;
+}
+.image__cloud {
+    top: 120px;
+    right: 35px;
+    position: absolute;
+}
+.footer {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+}
