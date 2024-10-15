@@ -5,7 +5,6 @@
 
 .wrapper{
     font-family: "Epilogue", sans-serif;
-    color: #391400;
     min-height: 100%;
     overflow: clip;
     background-color:#FDF0E9;
@@ -20,6 +19,7 @@
     text-shadow: 3px 4px 3px rgb(46, 44, 103);
 }
 .hero {
+    padding-block: 40px;
     background-color: #28293E;
 }
 .hero__container {
@@ -27,23 +27,40 @@
     margin: 0 auto;
 }
 .image{
-}
-.hero__img {
-    width: 50%;
+    margin-bottom: 40px;
+    width: 570px;
+    height: 602px;
     position: relative;
-
 }
+
 .image__block {
+    position: relative;
+    top: 0;
+    left: 0;
     background-color: #B550F8;
     border-radius: 50% 50% 10px 10px;
-    max-width: 246px;
-    max-height: 305px;
+    width: 246px;
+    height: 305px;
+    z-index: 1;
 }
-.image__block--color {
-    right: 0;
-    bottom: 0;
+.block-item__image {
     position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.block-item__image--position {
+    bottom: 16px;
+    left: 21px;
+}
+
+.image__block--color {
+    left: 310px;
+    top: -100px;
+    position: relative;
     background-color: #F7CC47;
+}
+.image__block--color img {
+    position: absolute;
 }
 .image__oval {
     position: absolute;
@@ -60,14 +77,57 @@
     position: absolute;
 }
 .image__strars {
-    top: 75px;
-    right: 180px;
+    top: 62px;
+    right: 170px;
     position: absolute;
 }
 .image__cloud {
     top: 120px;
-    right: 35px;
+    right: 0;
     position: absolute;
+}
+.image__page {
+    position: absolute;
+    bottom: 45px;
+    left: 45px;
+    z-index: 1;
+}
+.image__arrow-big {
+    position: absolute;
+    bottom: 170px;
+    left: 0;
+}
+.image__arrow-small {
+    position: absolute;
+    bottom: 0;
+    left: 300px;
+}
+.card{
+    position: relative;
+}
+.card img{
+    opacity: 0.3181;
+}
+.card__link {
+    position: absolute;
+    top: 416px;
+    left: 48px;
+    font-size: 16px;
+    line-height: 2;
+    color: #391400;
+    background-color: #fff;
+    border-radius: 19px;
+    padding-inline: 15px;
+}
+.card p{
+    position: absolute;
+    top: 477px;
+    left: 48px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+    text-transform: uppercase;
 }
 .footer {
     text-align: center;
