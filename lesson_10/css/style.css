@@ -129,27 +129,26 @@
 .card__item {
     position: relative;
     display: inline-block;
-    width: 30%;
     vertical-align: top;
     box-sizing: border-box;
     border: 1px solid #ffffff35;
     padding: 16px;
     overflow: hidden;
-    max-width: 480px;
 }
-.card__item img {
+.link__block img {
     max-width: 448px;
 }
-.card__item:hover img {
+.link__block:hover img {
     opacity: 0.3181;
 }
-.card__block {
+.link__text {
     position: absolute;
     bottom: 51px;
     left: 48px;
     text-align: left;
 }
-.card__link {
+.link__title {
+    display: inline-block;
     font-size: 16px;
     line-height: 2;
     color: #391400;
@@ -158,7 +157,7 @@
     padding-inline: 15px;
     margin-bottom: 23px;
 }
-.card p{
+.link__text p{
     color: #fff;
     font-size: 40px;
     font-weight: 800;
