@@ -53,7 +53,7 @@ body {
     margin: 0 15px 15px 0;
     text-align: center;
     width: 200px;
-    height: 220px;
+    height: 240px;
     vertical-align: top;
 }
 .card__bg {
@@ -94,6 +94,23 @@ body {
     transform-origin: -100% 50%;
     transform: rotate(45deg);
 }
+
+.card__bg--perspective {
+    perspective: 300px;
+    perspective-origin: center;
+}
+.card:hover .card__block--perspective {
+    transform: rotateX(50deg);
+}
+.card:hover .card__block--translate3d {
+    transform: translate3d(20px, 20px, 20px);
+}
+.card:hover .card__block--scale3d {
+    transform: scale3d(0.9, 0.9, 0.9);
+}
+.card:hover .card__block--rotate3d {
+    transform: rotate3d(1, 1, 1, 50deg);
+}
 .footer {
     text-align: center;
     font-size: 24px;
@@ -129,9 +146,10 @@ body {
     position: relative;
     width: 300px;
     height: 150px;
-    border-radius: 80px 15px 0  0;
+    border-radius: 117px 15px 0  0;
     background-color: transparent;
     border: 10px solid #268fa5;
+    box-shadow: -12px -6px 0px 6px rgb(255 255 255);
 }
 .car__top::after {
     top: 155px;
@@ -187,7 +205,8 @@ body {
     width: 550px;
     height: 180px;
     background-color: #268fa5;
-    border-radius: 85px 15px 15px 15px;
+    border-radius: 112% 90% 17% 66% / 70% 43% 221% 91%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .car__side::before {
     content: "";
@@ -212,21 +231,38 @@ body {
     transform: rotate(153deg);
         
 }
-.car__wheel{
+.car__wheel {
     position: relative;
     width: 125px;
     height: 125px;
     background-color: silver;
-    border: 10px solid black;
+    border: 10px dashed black;
     border-radius: 50%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 .car__wheel::before {
     position: absolute;
     content: "";
     width: 50px;
     height: 50px;
+    background-color: black;
     border-radius: 50%;
     border: 5px dotted #fff;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.car__wheel::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 90px;
+    background-color: transparent;
+    border: 5px solid black;
+    border-radius: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
