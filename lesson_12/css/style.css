@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,700&display=swap");
+
+
+@import url("reset.css");
+
+body {
+    font-family: "Epilogue", sans-serif;
+    background-color: #140937;
+    color: #fff;
+}
+.header {
+    text-align: center;
+    padding-block: 25px;
+}
+
+.header__title {
+    font-size: 56px;
+    font-weight: 700;
+    text-shadow: 3px 4px 3px rgb(46, 44, 103);
+}
+.wrapper{
+    min-height: 100%;
+    overflow: clip;
+}
+[class*="__container"] {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.hero {
+    margin-bottom: 40px;
+}
+.hero__container {
+    background-color: #322cab86;
+    border-radius: 30px;
+    box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
+}
+.hero__title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.hero__list{
+    text-align: center;
+    vertical-align: top;
+}
+.card {
+    padding: 15px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 0 15px 15px 0;
+    text-align: center;
+    width: 200px;
+    height: 220px;
+    vertical-align: top;
+}
+.card__bg {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(179, 202, 245, 0.311);
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.card__block {
+    width: 150px;
+    height: 150px;
+    background-color: cornflowerblue;
+}
+.card p {
+    text-align: center;
+}
+.card:hover .card__block {
+    transform: translate(20px, -20px);
+}
+.card:hover .card__block--scale{
+    transform: scale(0.5);
+}
+.card:hover .card__block--rotate{
+    transform: rotate(50deg);
+}
+.card:hover .card__block--skew{
+    transform: skew(-30deg, 0deg);
+}
+.card:hover .card__block--matrix {
+    transform: matrix(0, 2, 1, 1, 1, 2);
+}
+.card:hover .card__block--multiplicity{
+    transform: translateY(10%) skew(25deg);
+}
+.card:hover .card__block--origin {
+    transform-origin: -100% 50%;
+    transform: rotate(45deg);
+}
+
+.practice {
+    width: 1290px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+.practice__bg {
+    position: relative;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.practice__body {
+    top: 117px;
+    left: 502px;
+    width: 700px;
+    height: 500px;
+}
+
+.car {
+    position: relative;
+    animation: move-car 5s linear forwards,
+    wobble 1s linear alternate 5s infinite;
+}
+@keyframes move-car {
+    0% {
+        left: 1000px;
+        top: -200px;
+        transform: scale(0.1);
+    }
+
+    100% {
+        top: 150px;
+        left: 35px;
+        transform: scale(0.7) rotate(-20deg);
+    }
+}
+@keyframes wobble {
+    0% {
+        transform: scale(0.7) rotate(-20deg);
+    }
+
+    100% {
+        transform: scale(0.7) rotate(-15deg);
+    }
+}
+.car__top {
+    left: 250px;
+    top: 105px;
+    position: relative;
+    width: 300px;
+    height: 150px;
+    border-radius: 117px 15px 0 0;
+    background-color: transparent;
+    border: 10px solid #268fa5;
+    box-shadow: -12px -6px 0px 6px rgb(255 255 255);
+}
+
+.car__top::after {
+    top: 155px;
+    z-index: 2;
+    left: -166px;
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(90deg);
+}
+
+.car:hover .car__top::after {
+    box-shadow: 5px 5px 15px rgb(238, 245, 40);
+}
+
+.car__top::before {
+    content: "";
+    position: absolute;
+    left: 162px;
+    top: -5px;
+    height: 320px;
+    width: 2px;
+    background-color: #fafafa5f;
+    z-index: 2;
+}
+
+.window-1{
+    position: absolute;
+    top: -4px;
+    left: 10px;
+    width: 150px;
+    height: 140px;
+    border-radius: 75px 15px 0 0;
+    background-color: transparent;
+    background-image: url('../img/ron-in-car.png');
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: -10px center;
+}
+.window-1::after {
+    content: "";
+    top: 0;
+    position: absolute;
+    left: 146px;
+    height: 141px;
+    width: 15px;
+    background-color: #268fa5;
+}
+.window-2 {
+    position: absolute;
+    top: -9px;
+    left: 164px;
+    width: 150px;
+    height: 140px;
+    background-image: url(../img/owl.png);
+    background-size: 215px;
+    background-repeat: no-repeat;
+    background-position: -64px center;
+}
+.window-2::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 6px;
+    width: 111px;
+    height: 132px;
+    background-color: black;
+    animation: move-window 2s linear 11s forwards;
+}
+
+@keyframes move-window {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(150px);
+    }
+}
+.car__side {
+    left: 100px;
+    position: relative;
+    bottom: -100px;
+    width: 550px;
+    height: 180px;
+    background-color: #268fa5;
+    border-radius: 112% 90% 17% 66% / 70% 43% 221% 91%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.car__side::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 19px;
+    top: 25px;
+    border-top: 10px solid transparent;
+    border-right: 530px solid rgb(255, 255, 255);
+    border-bottom: 10px solid transparent;
+}
+
+.car__side::after {
+    content: "";
+    position: absolute;
+    right: -60px;
+    width: 0;
+    height: 0;
+    border-left: 67px solid transparent;
+    border-right: 71px solid transparent;
+    border-bottom: 29px solid rgb(255, 255, 255);
+    transform: rotate(153deg);
+}
+.car__bottom {
+    position: absolute;
+    bottom: 69px;
+    left: 193px;
+    width: 88px;
+    height: 50px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    background-color: #000000;
+    z-index: 1;
+}
+
+.car__wheel {
+    position: relative;
+    width: 125px;
+    height: 125px;
+    background-color: silver;
+    border: 10px dashed black;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.car__wheel::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    border: 5px dotted #fff;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.car__wheel::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 90px;
+    background-color: transparent;
+    border: 5px solid black;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.car__wheel--right {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    animation: rotate-wheel 3s linear infinite;
+}
+
+.car__wheel--left {
+    position: absolute;
+    bottom: 0;
+    left: 167px;
+    animation: rotate-wheel 3s linear infinite,
+    wheel-down 1s linear 12s forwards;
+}
+@keyframes rotate-wheel{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes wheel-down {
+    0% {
+        transform: translateY(0);
+    }
+    
+    100% {
+        transform: translateY(450px);
+    }
+}
+.car__wheel--left:hover, .car__wheel--right:hover {
+    animation-play-state: paused;
+}
+.block{
+    position: relative;
+    max-width: 400px;
+    animation: move 8s linear 5s forwards;
+    left: 1200px;
+}
+.block__img {
+    max-width: 400px;
+}
+@keyframes move {
+    0% {
+        left: 1200px;
+    }
+    50%,70% {
+        left: 600px;
+    }
+    100%{
+        left: 1200px;
+    }
+}
+.block__text{
+    background-color:#ffffff;
+    position: absolute;
+    padding: 20px;
+    max-width: 150px;
+    text-align: center;
+    color: #140937;
+    border-radius: 15px;
+    border: 2px solid #140937;
+    transform: scale(0);
+    animation: text-size 3s linear 8s forwards;
+}
+@keyframes text-size {
+    0% {
+        transform: scale(0);
+    }
+    30%, 80% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+.footer {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+}
