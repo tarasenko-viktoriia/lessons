@@ -10,6 +10,7 @@ body {
 .header {
     text-align: center;
     padding-block: 25px;
+    margin-bottom: 100px;
 }
 
 .header__title {
@@ -33,7 +34,7 @@ body {
     padding-inline: 15px;
 }
 .portfolio {
-    margin-block: 92px 192px;
+    margin-bottom: 117px;
 }
 .title-block {
     text-align: center;
@@ -48,7 +49,6 @@ body {
 .title-block--position {
     text-align: left;
     margin: 0;
-    max-width: 531px;
 }
 .title-block p{
     color: #EF6D58;
@@ -73,12 +73,16 @@ body {
     justify-content: center;
     gap: 46px;
     margin-bottom: 68px;
+    flex-wrap: wrap;
 }
 
 .menu__item {
     position: relative;
 }
-
+.menu__item > sup{
+    display: inline-block;
+    transform: translateY(-8px);
+}
 .menu__item::after {
     content: "";
     position: absolute;
@@ -101,7 +105,6 @@ body {
     font-size: 14px;
     font-weight: 900;
     text-transform: uppercase;
-    max-width: 170px;
     border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.30);
     padding: 16px 25px;
@@ -186,6 +189,7 @@ body {
 }
 .contact {
     margin-bottom: 140px;
+    padding-block-start: 75px;
 }
 .contact__container {
     display: flex;
@@ -205,6 +209,9 @@ body {
     background: url("../img/contacts-03.svg") 0 0 /100% no-repeat;
     transition: transform 0.3s ease;
     transform: scale(1);
+}
+.contact__text {
+    padding-block: 15px;
 }
 .contact__container:hover::before {
     transform: scale(1.1);
@@ -233,6 +240,7 @@ body {
 .contact__img--margin {
     max-width: 295px;
     margin-top: -50px;
+    align-self: flex-end;
 }
 .events__cards { 
     display: flex;
@@ -252,7 +260,6 @@ body {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 370px;
-    max-width: 370px;
     transition: transform 0.3s ease;
 }
 .events__item:hover{
@@ -282,6 +289,9 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    border-bottom: 2px solid #3A3C56;
+    padding-bottom: 36px;
+    margin-bottom: 40px;
 }
 .events-time::before{
     content: "";
@@ -289,10 +299,6 @@ body {
     inline-size: 16px;
     block-size: 16px;
     background: url("../img/clock.svg") 0 0 /100% no-repeat;
-}
-.divider { 
-    border-top: 2px solid #3A3C56;;
-    margin-block: 36px 40px;
 }
 .events-block {
     display: flex;
@@ -350,28 +356,16 @@ body {
     display: flex;
     flex-basis: 270px;
     flex-direction: column;
-    padding-top: 30px;
 }
 .team__img {
     display: flex;
     justify-content: center;
     border-radius: 6px;
     border: 1px solid #3A3C56;
-    flex-basis: 270px;
-    padding-top: 30px;
+    min-height: 270px;
+    align-items: flex-end;
     margin-bottom: 26px;
-}
-.team__img--width-196 > img{
-    max-width: 196px;
-}
-.team__img--width-259 >img{
-    max-width: 259px;
-}
-.team__img--width-205 >img{
-    max-width: 205px;
-}
-.team__img--width-230 >img{
-    max-width: 230px;
+    max-width: 100%;
 }
 .team__info > h4 {
     font-size: 24px;
@@ -393,12 +387,19 @@ body {
 }
 .founder__block {
     display: flex;
-    gap: 130px;
     align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+.founder__text {
+    flex-basis: 470px;
+}
+.founder__text .title-block,
+.founder__text .founder__info {
+    max-width: none;
 }
 .founder__text .title-block {
     margin-bottom: 44px;
-    background: url();
     position: relative;
 }
 .founder__text .title-block::after {
@@ -410,6 +411,7 @@ body {
     block-size: 80px;
     background: url("../img/shape.svg") 0 0 / 100% no-repeat;
     z-index: -1;
+    
 }
 .founder__img > img {
     max-width: 570px;
