@@ -32,6 +32,15 @@ body {
     margin: 0 auto;
     padding-inline: 15px; 
 }
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
 .portfolio {
     font-family: "Work Sans", sans-serif;
     color:  #87909D;
@@ -88,6 +97,9 @@ body {
 .form__button:hover {
     background-color: #8431CC;
     transition-duration: 0.3s;
+}
+.form__button:focus {
+    border: 2px solid #0F0F0F;
 }
 
 :focus {
@@ -171,6 +183,7 @@ body {
 }
 .col-3 textarea {
     resize: vertical;
+    min-height: 163px;
 }
 .effect-2 {
     border-radius: 8px;
@@ -226,6 +239,9 @@ body {
     background-color:  #E50000;
     padding: 18px 24px;
     font-weight: 600;
+}
+.form-dark__button:focus {
+    border: 2px solid #ffF;
 }
 .form-dark__end {
     display: flex;
