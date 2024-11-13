@@ -9,28 +9,64 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
+			<p>Бургер-меню без JS</p>
 			<div class="header__container">
 				<img class="header__logo" src="img/logo.png" alt="Logo">
 				<div class="header__menu menu">
 					<div class="menu__body">
-						<ul class="menu__list">
-							<li class="menu__item">
-								<a href="#" class="menu__link">About</a>
+
+						<div class="menu__nav">
+							<input id="menu__toggle" type="checkbox">
+							<label class="menu__btn" for="menu__toggle">
+								<span></span>
+							</label>
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" class="menu__link">About</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Services</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Pricing</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Blog</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="header__button">
+					<a class="button" href="#">Contact</a>
+				</div>
+			</div>
+
+			<p>Бургер-меню з JS</p>
+			<div class="header__container">
+				<img class="header__logo" src="img/logo.png" alt="Logo">
+
+				<div class="header__nav nav">
+					<div class="nav__body">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="#" class="nav__link">About</a>
 							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">Services</a>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Services</a>
 							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">Pricing</a>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Pricing</a>
 							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">Blog</a>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Blog</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 				<div class="header__button">
 					<a class="button" href="#">Contact</a>
+					<button class="icon-menu" type="button"><span></span></button>
 				</div>
 			</div>
 		</header>
@@ -41,5 +77,6 @@
 			<p class="footer__text">&copy;2024, Всі права захищені</p>
 		</footer>
 	</div>
+	<script src="script.js"></script>
 </body>
 </html>
