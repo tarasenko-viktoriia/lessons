@@ -239,9 +239,13 @@ input[type='number'] {
     background-color:  #E50000;
     padding: 18px 24px;
     font-weight: 600;
+    transition: background-color 0.3s ease;
 }
 .form-dark__button:focus {
     border: 2px solid #ffF;
+}
+.form-dark__button:hover {
+    background-color: #FF4D4D;
 }
 .form-dark__end {
     display: flex;
