@@ -18,6 +18,16 @@ body {
     font-weight: 700;
     text-shadow: 3px 4px 3px rgb(46, 44, 103);
 }
+@media (max-width: 698px) {
+    .header__title {
+        font-size: 48px;
+    }
+}
+@media (max-width: 603px) {
+    .header__title {
+        font-size: 36px;
+    }
+}
 .wrapper{
     min-height: 100%;
     overflow: clip;
@@ -33,32 +43,86 @@ body {
     margin: 0 auto;
     padding-inline: 15px;
 }
+.header__text {
+    font-size: 28px;
+    padding-block: 15px;
+    text-decoration: underline;
+}
+.main__button {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+.main__button > a{
+    flex-basis: 300px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 900;
+
+    border-radius: 6px;
+    background: #EF6D58;
+    padding: 18px 10px;
+    transition: background 0.3s ease ;
+
+}
+
+.main__button > a:hover {
+    background: #fff;
+    box-shadow: 0px 3px 9px 0px rgba(57, 20, 0, 0.08);
+    color: #391400;
+}
+
+@media (max-width: 469px) {
+    .main__button>a {
+        font-size: 14px;
+        padding: 14px 10px;
+    }
+}
+@media (max-width: 423px) {
+    .main__button>a {
+        font-size: 12px;
+        padding: 12px 8px;
+    }
+}
+@media (max-width: 369px) {
+    .main__button>a {
+        font-size: 10px;
+        font-weight: 800;
+        padding: 10px 6px;
+    }
+}
 .header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 15px;
+    gap: 35px;
     min-height: 80px;
     padding-block: 10px;
 }
 .header__logo {
+    display: flex;
     max-width: 100%;
     flex-basis: 152px;
     position: relative;
     z-index: 5;
+    flex-shrink: 0;
 }
 .header__logo, .header__button{
     flex-basis: 152px;
 }
+.menu, .nav {
+    flex-basis: 515px;
+}
 .menu__list, .nav__list {
     display: flex;
-    column-gap: 104px;
+    column-gap: 15px;
     row-gap: 15px;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     line-height: 2;
 }
+
 .menu__link,.nav__link {
     position: relative;
 }
@@ -76,9 +140,6 @@ body {
     transform-origin: center;
 }
 
-.menu__link:hover::after,.nav__link:hover::after {
-    transform: scaleX(1);
-}
 .button {
     border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.30);
@@ -87,20 +148,49 @@ body {
     font-weight: 900;
     text-transform: uppercase;
     transition: background-color 0.5s ease;
+    z-index: 5;
 }
-.button:hover{
-    background-color: #B550F8;
+.header__button {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    justify-content: flex-end;
 }
+.icon-menu {
+    display: none;
+}
+
 #menu__toggle {
-    opacity: 0;
+    display: none;
 }
-@media (max-width:800px){
+
+@media (max-width:418px) {
+    .header__container {
+        gap: 15px;
+    }
+    .header__logo img {
+        flex-basis: auto;
+        width: 120px;
+    }
+    .button{
+        padding: 12px 20px;
+        font-size: 12px;
+    }
+    .header__logo,
+    .header__button {
+        flex-basis: 120px;
+    }
+}
+.menu__list-none {
+    display: none;
+}
+@media (max-width:700px){
         .menu__btn {
             display: flex;
             align-items: center;
-            position: fixed;
-            top: 20px;
-            right: 20px;
+            position: relative;
             width: 26px;
             height: 26px;
             cursor: pointer;
@@ -131,23 +221,24 @@ body {
             display: block;
             position: fixed;
             visibility: hidden;
-            top: 80px;
+            top: 0;
             right: -100%;
-            width: 300px;
+            width: 100%;
             height: 100%;
             margin: 0;
-            padding: 80px 0;
+            padding: 126px 0;
             list-style: none;
             text-align: center;
-            background-color: #eceff1;
+            background-color: #0f0f0f;
             box-shadow: -1px 0px 6px rgba(0, 0, 0, .2);
             transition: right 0.3s ease;
         }
     
         .menu__item {
+            text-align: right;
             display: block;
-            padding: 12px 24px;
-            color: #333;
+            padding: 12px 57px;
+            color: #ffffff;
         }
     
         #menu__toggle:checked~.menu__btn>span {
@@ -183,9 +274,104 @@ body {
             transition-duration: 0.3s;
         }
 }
+@media (max-width: 700px) {
+    .icon-menu {
+		flex-shrink: 0;
+		flex-basis: 30px;
+		display: flex;
+		flex-direction: column;
+        z-index: 5;
+	}
+    .icon-menu span {
+		margin-block: 6px;
+	}
+	.icon-menu span,
+	.icon-menu::before,
+	.icon-menu::after {
+		transition: all 0.3s;
+		content: "";
+		height: 2px;
+		width: 100%;
+		background-color: #fff;
+	}
+    .nav__body {
+		position: fixed;
+		inset-inline-start: 100%;
+		inset-block-start: 0;
+		inline-size: 100%;
+		block-size: 100%;
+		z-index: 2;
 
+		transition: inset-inline-start 0.3s;
+
+		overflow: auto;
+
+		padding: 140px 65px 30px;
+
+		background-color: #0f0f0f;
+	}
+	.nav__body::before {
+		content: "";
+		position: fixed;
+		block-size: 125px;
+		inline-size: 100%;
+		inset-inline-start: 100%;
+		inset-block-start: 0;
+		z-index: 3;
+		background-color: #0f0f0f;
+		transition: inset-inline-start 0.3s;
+	}
+
+	.nav__list {
+		flex-direction: column;
+		border: none;
+		align-items: flex-end;
+		background-color: transparent;
+		row-gap: 25px;
+	}
+	.nav__link {
+		font-size: 24px;
+		padding: 0;
+	}
+	.nav__link.active {
+		text-decoration: underline;
+		background-color: transparent;
+	}
+
+	.open-menu .nav__body,
+	.open-menu .nav__body::before {
+		inset-inline-start: 0;
+	}
+
+	.open-menu .icon-menu span {
+		width: 0;
+		height: 0;
+		margin: 0;
+	}
+	.open-menu .icon-menu::before {
+		transform: rotate(45deg) translateY(1.5px);
+	}
+	.open-menu .icon-menu::after {
+		transform: rotate(-45deg) translateY(-1.5px);
+	}
+}
+@media (any-hover: hover) {
+    .menu__link:hover::after,
+    .nav__link:hover::after {
+        transform: scaleX(1);
+    }
+    .button:hover {
+        background-color: #B550F8;
+    }
+}
 .footer {
     text-align: center;
     font-size: 24px;
     padding: 20px;
+}
+
+@media (max-width: 698px) {
+    .footer {
+        font-size: 18px;
+    }
 }
