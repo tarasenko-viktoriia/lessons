@@ -113,7 +113,7 @@ body {
 .button--color {
     text-align: left;
 }
-.button--color a{
+.button__link--color {
     background-color: #EF6D58;
 }
 
@@ -615,11 +615,11 @@ body {
     .contact__container:hover::before {
         transform: scale(1.1);
     }
-    .button:hover a {
+    .button__link:hover{
         background-color: #B550F8;
         transition-duration: 0.3s;
     }
-    .button--color:hover a {
+    .button__link--color:hover {
         background-color: #fff;
         color: #391400;
         transition-duration: 0.3s;
