@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<h1 class="header__title">Домашнє завдання №19</h1>
+			<p class="header__title">Домашнє завдання №19</p>
 			<a class="header__logo" href="index.html" aria-label="open home page">
 				<img src="img/logo.png" alt="Logo">
 			</a>
@@ -32,7 +32,7 @@
 			</nav>
 			<div class="header__button">
 				<a class="button" href="#">Contact</a>
-				<button class="icon-menu" type="button"><span></span></button>
+				<button class="icon-menu" type="button" aria-label="button burger menu"><span></span></button>
 			</div>
 		</header>
 		<main class="main">
@@ -53,7 +53,9 @@
 						<div class="portfolio__card card">
 							<article>
 								<a class="card__link" href="#">
-									<img class="card__img" src="img/img-01.jpg" alt="ladder">
+									<div class="card__block">
+										<img class="card__img" src="img/img-01.jpg" alt="ladder">
+									</div>
 									<div class="text">
 										<div class="text__category">Design</div>
 										<h3 class="text__title">SOFA</h3>
@@ -62,7 +64,9 @@
 							</article>
 							<article>
 								<a class="card__link" href="#">
-									<img class="card__img" src="img/img-02.jpg" alt="pedestal with an arch on the background">
+									<div class="card__block">
+										<img class="card__img" src="img/img-02.jpg" alt="pedestal with an arch on the background">
+									</div>
 									<div class="text">
 										<div class="text__category">Branding</div>
 										<h3 class="text__title">Branding</h3>
@@ -71,7 +75,9 @@
 							</article>
 							<article>
 								<a class="card__link" href="#">
-									<img class="card__img" src="img/img-03.jpg" alt="four cilinders of different heights">
+									<div class="card__block">
+										<img class="card__img" src="img/img-03.jpg" alt="four cilinders of different heights">
+									</div>
 									<div class="text">
 										<div class="text__category">Illustration</div>
 										<h3 class="text__title">Work Media</h3>
@@ -80,7 +86,9 @@
 							</article>
 							<article>
 								<a class="card__link" href="#">
-									<img class="card__img" src="img/img-04.jpg" alt="three cubes">
+									<div class="card__block">
+										<img class="card__img" src="img/img-04.jpg" alt="three cubes">
+									</div>
 									<div class="text">
 										<div class="text__category">Work Media</div>
 										<h3 class="text__title">DDDone</h3>
@@ -104,8 +112,12 @@
 								<a class="button__link button__link--color" href="#">Contact Us</a>
 							</div>
 						</div>
-						<img class="contact__img contact__img--none"  loading="lazy" src="img/contact-02.png" alt="Page with yellow circle and red arrow">
-						<img class="contact__img contact__img--margin" loading="lazy" src="img/contacts-01.png" alt="A girl in a beige T-shirt ">
+						<div class="contact__block">
+							<img class="contact__img contact__img--none"  loading="lazy" src="img/contact-02.png" alt="Page with yellow circle and red arrow">
+						</div>
+						<div class="contact__block">
+							<img class="contact__img contact__img--margin" loading="lazy" src="img/contacts-01.png" alt="A girl in a beige T-shirt ">
+						</div>
 					</div>
 				</section>
 				<section class="events">
@@ -118,7 +130,7 @@
 							<article class="events__item">
 								<div class="events-date">
 									<time datetime="2021-11-03">
-										<p><span>3</span> November 2021</p>
+										<span>3</span> November 2021
 									</time>
 								</div>
 								<div class="events-time">
@@ -133,7 +145,7 @@
 							<article class="events__item">
 								<div class="events-date">
 									<time datetime="2021-11-15">
-										<p><span>15</span> November 2021</p>
+										<span>15</span> November 2021
 									</time>
 								</div>
 								<div class="events-time">
@@ -148,7 +160,7 @@
 							<article class="events__item">
 								<div class="events-date">
 									<time datetime="2021-12-02">
-										<p><span>2</span> December 2021</p>
+										<span>2</span> December 2021
 									</time>
 								</div>
 								<div class="events-time">
@@ -174,8 +186,8 @@
 								<h2>Team of Designers and Developers</h2>
 							</div>
 							<div class="arrows">
-								<a class="arrows__left" href="#"></a>
-								<a class="arrows__right" href="#"></a>
+								<button class="arrows__left" type="button" aria-label="arrows left"></button>
+								<button class="arrows__right" type="button" aria-label="arrows righte"></button>
 							</div>
 						</div>
 						<div class="team__cards">
@@ -197,15 +209,15 @@
 									<p>React Developer</p>
 								</div>
 							</article>
-							<article="team__item">
+							<article class="team__item">
 								<div class="team__img">
-									<img src="img/team-03.png" loading="lazy"alt="Leonardo Oliveira">
+									<img src="img/team-03.png" loading="lazy" alt="Leonardo Oliveira">
 								</div>
 								<div class="team__info">
 									<h4>Leonardo Oliveira</h4>
 									<p>Illustrator</p>
 								</div>
-							</article=>
+							</article>
 							<article class="team__item">
 								<div class="team__img">
 									<img src="img/team-04.png" loading="lazy" alt="Leonardo Oliveira">
@@ -227,14 +239,14 @@
 							<div class="founder__img">
 								<img src="img/funder.png" loading="lazy"  alt="founder Ren Delan">
 							</div>
-							<div class="founder__text">
+							<div class="text-block">
 								<div class="title-block title-block--position">
 									<p>Founder Words</p>
 									<blockquote>Digital agency is a business you hire to outsource your digital marketing efforts</blockquote>
 									<cite>
-										<p>Ren Delan</p>
-										<p>Founder</p>
+										Ren Delan
 									</cite>
+									<p>Founder</p>
 								</div>
 							</div>
 						</div>
@@ -247,38 +259,54 @@
 					</div>
 					<div class="testimonials__items">
 						<div class="testimonials__card">
-							<img src="img/star.png" alt="Five stars">
+							<div class="testimonials__block">
+								<img src="img/star.png" alt="Five stars">
+							</div>
 							<blockquote>A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They
 							can provide your business with a variety of digital solutions to promote your product or service online and help you.</blockquote>
-							<div>
-								<img src="img/alan-marti.png" alt="Alan Marti">
+							<div class="testimonials__info">
+								<div class="testimonials__img">
+									<img src="img/alan-marti.png" alt="Alan Marti">
+								</div>
 								<cite>Alan Martí</cite>
 								<p>Meta Inc.</p>
 							</div>
 						</div>
 						<div class="testimonials__card">
-							<img src="img/star.png" alt="Five stars">
+							<div class="testimonials__block">
+								<img src="img/star.png" alt="Five stars">
+							</div>
 							<blockquote>Provide your business with a variety of digital solutions to promote your product or service online.</blockquote>
-							<div>
-								<img src="img/richardo-kann.png" alt="Richardo Kann">
+							<div class="testimonials__info">
+								<div class="testimonials__img">
+									<img src="img/richardo-kann.png" alt="Richardo Kann">
+								</div>
 								<cite>Richardo Kann</cite>
 								<p>Photogram</p>
 							</div>
 						</div>
 						<div class="testimonials__card">
-							<img src="img/star.png" alt="Five stars">
+							<div class="testimonials__block">
+								<img src="img/star.png" alt="Five stars">
+							</div>
 							<blockquote>Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety.</blockquote>
-							<div>
-								<img src="img/graham-griffiths.png" alt="Graham Griffiths">
+							<div class="testimonials__info">
+								<div class="testimonials__img">
+									<img src="img/graham-griffiths.png" alt="Graham Griffiths">
+								</div>
 								<cite>Graham Griffiths</cite>
 								<p>Twitor</p>
 							</div>
 						</div>
 						<div class="testimonials__card">
-							<img src="img/star.png" alt="Five stars">
+							<div class="testimonials__block">
+								<img src="img/star.png" alt="Five stars">
+							</div>
 							<blockquote>Promote your product or service online and help you hit your marketing goals and grow your business.</blockquote>
-							<div>
-								<img src="img/maria-trofimova.png" alt="Maria Trofimova">
+							<div class="testimonials__info">
+								<div class="testimonials__img">
+									<img src="img/maria-trofimova.png" alt="Maria Trofimova">
+								</div>
 								<cite>Maria Trofimova</cite>
 								<p>Whochat</p>
 							</div>
@@ -312,20 +340,23 @@
 				</article>
 				<div class="statistics">
 					<div class="statistics__item">
-						<img src="img/page.svg" alt="Page">
+						<div class="statistics__icon">
+							<img src="img/page.svg" alt="Page">
+						</div>
 						<div>
 							<b>42%</b>
 							<p>Years of experience</p>
 						</div>
 					</div>
 					<div class="statistics__item">
-						<img src="img/project.svg" alt="Project">
+						<div class="statistics__icon">
+							<img src="img/project.svg" alt="Project">
+						</div>
 						<div>
 							<b>73+</b>
 							<p>Projects Done</p>
 						</div>
 					</div>
-					
 				</div>
 				<article>
 					<div class="title-block">
@@ -333,20 +364,20 @@
 						<h2>Unlock The Greatest Value Possible</h2>
 					</div>
 					<p>Design, business understanding, ability to put themselves in the merchant's shoes meant to partner.</p>
-					<video loading="lazy" loop autoplay muted src="#"></video>
+					<video loop autoplay muted src="#"></video>
 					<p>Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of
 					the merchant's team.</p>
 					<p>A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They
 					can provide your business with a variety of digital solutions to promote your product or service online and help you.</p>
 				</article>
-				<div class="founder__text">
+				<div class="text-block">
 					<div class="title-block title-block--position">
 						<p>Founder Words</p>
 						<blockquote>Digital agency is a business you hire to outsource your digital marketing efforts</blockquote>
 						<cite>
-							<p>Ren Delan</p>
-							<p>Founder</p>
+							Ren Delan
 						</cite>
+						<p>Founder</p>
 					</div>
 				</div>
 				<div class="companies-list">
@@ -373,9 +404,13 @@
 					</div>
 					<p>Put themselves in the merchant's shoes. It is meant to partner on the long run.</p>
 					<a href="#">Contact Me</a>
-					<div>
-						<img src="img/cloud.svg" alt="cloud">
-						<img src="img/contact-02.png" alt="Page">
+					<div class="block-img">
+						<div class="block-img__item">
+							<img src="img/cloud.svg" alt="cloud">
+						</div>
+						<div class="block-img__item">
+							<img src="img/contact-02.png" alt="Page">
+						</div>
 					</div>
 				</section>
 			</div>
@@ -425,15 +460,23 @@
 				</div>
 				<div>
 					<address>
-						<a href="#">
-							<img src="img/facebook.png" loading="lazy" alt="Facebok icon" aria-label="open Facebok">
-						</a>
-						<a href="#">
-							<img src="img/twitter.png" loading="lazy" alt="Twitter icon" aria-label="open Twitter">
-						</a>
-						<a href="#">
-							<img src="img/instagram.png" loading="lazy" alt="Instagram icon" aria-label="open Instagram">
-						</a>
+						<ul>
+							<li>
+								<a href="#" aria-label="open Facebok">
+									<img src="img/facebook.png" loading="lazy" alt="Facebok icon">
+								</a>
+							</li>
+							<li>
+								<a href="#" aria-label="open Twitter">
+									<img src="img/twitter.png" loading="lazy" alt="Twitter icon">
+								</a>
+							</li>
+							<li>
+								<a href="#" aria-label="open Instagram">
+									<img src="img/instagram.png" loading="lazy" alt="Instagram icon">
+								</a>
+							</li>
+						</ul>
 					</address>
 				</div>
 			</div>
@@ -442,8 +485,14 @@
 					<p>Copyright &copy; 2022 Laaqiq. All Rights Reserved.</p>
 				</div>
 				<div class="policy__items">
-					<a href="#">Terms of Use</a>
-					<a href="#">Privacy Policy</a>
+					<ul>
+						<li>
+							<a href="#">Terms of Use</a>
+						</li>
+						<li>
+							<a href="#">Privacy Policy</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</footer>
