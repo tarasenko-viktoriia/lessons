@@ -47,6 +47,12 @@ body {
 	row-gap: 24px;
 	grid-auto-rows: auto;
 }
+.text {
+	text-align: center;
+	font-size: 36px;
+	padding-block: 50px;
+	font-weight: 600;
+}
 @media (max-width: 991.98px){
 	.grid__items {
 			gap: 12px;
