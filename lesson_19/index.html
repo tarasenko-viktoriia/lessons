@@ -32,7 +32,7 @@
 			</nav>
 			<div class="header__button">
 				<a class="button" href="#">Contact</a>
-				<button class="icon-menu" type="button" aria-label="button burger menu"><span></span></button>
+				<button class="icon-menu" type="button" aria-label="open/closed menu"><span></span></button>
 			</div>
 		</header>
 		<main class="main">
@@ -44,11 +44,23 @@
 							<h2>Latest Work</h2>
 						</div>
 						<div class="portfolio__menu menu">
-							<a class="menu__item" href="#">Show All<sup>14</sup></a>
-							<a class="menu__item" href="#">Design<sup>6</sup></a>
-							<a class="menu__item" href="#">Branding<sup>4</sup></a>
-							<a class="menu__item" href="#">Illustration<sup>3</sup></a>
-							<a class="menu__item" href="#">Motion<sup>1</sup></a>
+							<ul>
+								<li>
+									<a class="menu__item" href="#">Show All<sup>14</sup></a>
+								</li>
+								<li>
+									<a class="menu__item" href="#">Design<sup>6</sup></a>
+								</li>
+								<li>
+									<a class="menu__item" href="#">Branding<sup>4</sup></a>
+								</li>
+								<li>
+									<a class="menu__item" href="#">Illustration<sup>3</sup></a>
+								</li>
+								<li>
+									<a class="menu__item" href="#">Motion<sup>1</sup></a>
+								</li>
+							</ul>
 						</div>
 						<div class="portfolio__card card">
 							<article>
@@ -134,7 +146,9 @@
 									</time>
 								</div>
 								<div class="events-time">
-									<time datetime="09:00">09:00 am</time> – <time datetime="13:00">01:00 pm</time>
+									<time datetime="2021-11-03T09:00:00">
+										9:00 am – 3:00 pm
+									</time>
 								</div>
 								<div class="events-block">
 									<h4>Design Weeks</h4>
@@ -149,7 +163,9 @@
 									</time>
 								</div>
 								<div class="events-time">
-									<time datetime="13:00">01:00 pm</time> – <time datetime="20:00">08:00 pm</time>
+									<time datetime="2021-11-03T13:00">
+										01:00 pm - 08:00 pm
+									</time>
 								</div>
 								<div class="events-block">
 									<h4>Interior Design</h4>
@@ -164,7 +180,9 @@
 									</time>
 								</div>
 								<div class="events-time">
-									<time datetime="10:00">10:00 am</time> – <time datetime="14:00">2:00 pm</time>
+									<time datetime="2021-11-03T10:00">
+										10:00 am - 2:00 pm
+									</time>
 								</div>
 								<div class="events-block">
 									<h4>The F design events</h4>
@@ -186,54 +204,54 @@
 								<h2>Team of Designers and Developers</h2>
 							</div>
 							<div class="arrows">
-								<button class="arrows__left" type="button" aria-label="arrows left"></button>
-								<button class="arrows__right" type="button" aria-label="arrows righte"></button>
+								<button class="arrows__left" type="button" aria-label="scroll to the left"></button>
+								<button class="arrows__right" type="button" aria-label="scroll to the righte"></button>
 							</div>
 						</div>
 						<div class="team__cards">
-							<article class="team__item">
+							<figure class="team__item">
 								<div class="team__img">
-									<img src="img/team-01.png" loading="lazy"  alt="Azah Anyeni">
+									<img src="img/team-01.png" loading="lazy" alt="Azah Anyeni">
 								</div>
-								<div class="team__info">
-									<h4>Azah Anyeni</h4>
-									<p>Designer</p>
-								</div>
-							</article>
-							<article class="team__item">
+								<figcaption class="team__info">
+									<div>Azah Anyeni</div>
+									<div>Designer</div>
+								</figcaption>
+							</figure>
+							<figure class="team__item">
 								<div class="team__img">
 									<img src="img/team-02.png" loading="lazy"  alt="Roelof Bekkenenks">
 								</div>
-								<div class="team__info">
-									<h4>Roelof Bekkenenks</h4>
-									<p>React Developer</p>
-								</div>
-							</article>
-							<article class="team__item">
+								<figcaption class="team__info">
+									<div>Roelof Bekkenenks</div>
+									<div>React Developer</div>
+								</figcaption>
+							</figure>
+							<figure class="team__item">
 								<div class="team__img">
 									<img src="img/team-03.png" loading="lazy" alt="Leonardo Oliveira">
 								</div>
-								<div class="team__info">
-									<h4>Leonardo Oliveira</h4>
-									<p>Illustrator</p>
-								</div>
-							</article>
-							<article class="team__item">
+								<figcaption class="team__info">
+									<div>Leonardo Oliveira</div>
+									<div>Illustrator</div>
+								</figcaption>
+							</figure>
+							<figure class="team__item">
 								<div class="team__img">
 									<img src="img/team-04.png" loading="lazy" alt="Leonardo Oliveira">
 								</div>
-								<div class="team__info">
-									<h4>Izabella Tabakova</h4>
-									<p>Product Designer</p>
-								</div>
-							</article>
+								<figcaption class="team__info">
+									<div>Izabella Tabakova</div>
+									<div>Product Designer</div>
+								</figcaption>
+							</figure>
 						</div>
 						<div class="team__points">
 							<img src="img/pins.svg" loading="lazy" alt="points">
 						</div>
 					</div>
 				</section>
-				<div class="founder">
+				<section class="founder">
 					<div class="founder__container">
 						<div class="founder__block">
 							<div class="founder__img">
@@ -242,16 +260,18 @@
 							<div class="text-block">
 								<div class="title-block title-block--position">
 									<p>Founder Words</p>
-									<blockquote>Digital agency is a business you hire to outsource your digital marketing efforts</blockquote>
-									<cite>
+									<blockquote>
+										<h2>Digital agency is a business you hire to outsource your digital marketing efforts</h2>
+									</blockquote>
+									<div>
 										Ren Delan
-									</cite>
+									</div>
 									<p>Founder</p>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				</section>
 				<section class="testimonials">
 					<div class="title-block">
 						<p>Testimonials</p>
@@ -264,52 +284,60 @@
 							</div>
 							<blockquote>A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They
 							can provide your business with a variety of digital solutions to promote your product or service online and help you.</blockquote>
-							<div class="testimonials__info">
+							<figure class="testimonials__info">
 								<div class="testimonials__img">
 									<img src="img/alan-marti.png" alt="Alan Marti">
 								</div>
-								<cite>Alan Martí</cite>
-								<p>Meta Inc.</p>
-							</div>
+								<figcaption>
+									<div>Alan Martí</div>
+									<div>Meta Inc.</div>
+								</figcaption>
+							</figure>
 						</div>
 						<div class="testimonials__card">
 							<div class="testimonials__block">
 								<img src="img/star.png" alt="Five stars">
 							</div>
 							<blockquote>Provide your business with a variety of digital solutions to promote your product or service online.</blockquote>
-							<div class="testimonials__info">
+							<figure class="testimonials__info">
 								<div class="testimonials__img">
 									<img src="img/richardo-kann.png" alt="Richardo Kann">
 								</div>
-								<cite>Richardo Kann</cite>
-								<p>Photogram</p>
-							</div>
+								<figcaption>
+									<div>Richardo Kann</div>
+									<div>Photogram</div>
+								</figcaption>
+							</а>
 						</div>
 						<div class="testimonials__card">
 							<div class="testimonials__block">
 								<img src="img/star.png" alt="Five stars">
 							</div>
 							<blockquote>Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety.</blockquote>
-							<div class="testimonials__info">
+							<figure class="testimonials__info">
 								<div class="testimonials__img">
 									<img src="img/graham-griffiths.png" alt="Graham Griffiths">
 								</div>
-								<cite>Graham Griffiths</cite>
-								<p>Twitor</p>
-							</div>
+								<figcaption>
+									<div>Graham Griffiths</div>
+									<div>Twitor</div>
+								</figcaption>
+							</figure>
 						</div>
 						<div class="testimonials__card">
 							<div class="testimonials__block">
 								<img src="img/star.png" alt="Five stars">
 							</div>
 							<blockquote>Promote your product or service online and help you hit your marketing goals and grow your business.</blockquote>
-							<div class="testimonials__info">
+							<figure class="testimonials__info">
 								<div class="testimonials__img">
 									<img src="img/maria-trofimova.png" alt="Maria Trofimova">
 								</div>
-								<cite>Maria Trofimova</cite>
-								<p>Whochat</p>
-							</div>
+								<figcaption>
+									<div>Maria Trofimova</div>
+									<div>Whochat</div>
+								</figcaption>
+							</figure>
 						</div>
 						<div class="testimonials__button">
 							<a href="#">See All</a>
@@ -370,32 +398,46 @@
 					<p>A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They
 					can provide your business with a variety of digital solutions to promote your product or service online and help you.</p>
 				</article>
-				<div class="text-block">
+				<article class="text-block">
 					<div class="title-block title-block--position">
 						<p>Founder Words</p>
-						<blockquote>Digital agency is a business you hire to outsource your digital marketing efforts</blockquote>
-						<cite>
+						<blockquote>
+							<h2>Digital agency is a business you hire to outsource your digital marketing efforts</h2>
+						</blockquote>
+						<div>
 							Ren Delan
-						</cite>
+						</div>
 						<p>Founder</p>
 					</div>
-				</div>
+				</article>
 				<div class="companies-list">
-					<div class="companies-list__item">
-						<img loading="lazy" src="img/digitalside.png" alt="logo digitalside">
-					</div>
-					<div class="companies-list__item">
-						<img loading="lazy" src="img/fuzion.png" alt="logo fuzion">
-					</div>
-					<div class="companies-list__item">
-						<img loading="lazy" src="img/mediaFury.png" alt=" logo mediaFury">
-					</div>
-					<div class="companies-list__item">
-						<img loading="lazy" src="img/travel-explorer.png" alt="logo travel explorer">
-					</div>
-					<div class="companies-list__item">
-						<img loading="lazy" src="img/vortex.png" alt="logo vortex">
-					</div>
+					<ul>
+						<li>
+							<div class="companies-list__item">
+								<img loading="lazy" src="img/digitalside.png" alt="logo digitalside">
+							</div>
+						</li>
+						<li>
+							<div class="companies-list__item">
+								<img loading="lazy" src="img/fuzion.png" alt="logo fuzion">
+							</div>
+						</li>
+						<li>
+							<div class="companies-list__item">
+								<img loading="lazy" src="img/mediaFury.png" alt=" logo mediaFury">
+							</div>
+						</li>
+						<li>
+							<div class="companies-list__item">
+								<img loading="lazy" src="img/travel-explorer.png" alt="logo travel explorer">
+							</div>
+						</li>
+						<li>
+							<div class="companies-list__item">
+								<img loading="lazy" src="img/vortex.png" alt="logo vortex">
+							</div>
+						</li>
+					</ul>
 				</div>
 				<section>
 					<div class="title-block">
