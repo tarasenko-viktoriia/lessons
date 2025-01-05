@@ -299,15 +299,10 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-}
-
-@media (max-width: 62em) {
   .icon-menu span {
     margin-block: 0.375rem;
   }
-  .icon-menu span,
-  .icon-menu::before,
-  .icon-menu::after {
+  .icon-menu span, .icon-menu::before, .icon-menu::after {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     content: "";
@@ -315,6 +310,9 @@ body {
     width: 100%;
     background-color: #fff;
   }
+}
+
+@media (max-width: 62em) {
   .open-menu .menu__body,
   .open-menu .menu__body::before {
     inset-inline-start: 0;
@@ -335,6 +333,7 @@ body {
             transform: rotate(-45deg) translateY(-0.0938rem);
   }
 }
+
 .hero__container {
   padding-inline: 0;
 }

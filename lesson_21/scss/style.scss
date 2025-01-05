@@ -175,41 +175,45 @@ body {
       flex-basis: 1.875rem;
       display: flex;
       flex-direction: column;
+
+      span {
+         margin-block: 0.375rem;
+      }
+
+      span,
+      &::before,
+      &::after {
+         transition: all 0.3s;
+         content: "";
+         height: 0.125rem;
+         width: 100%;
+         background-color: #fff;
+      }
    }
 }
 
-@media (max-width: 62em) {
-   .icon-menu span {
-      margin-block: 0.375rem;
-   }
+.open-menu {
+   @media (max-width: 62em) {
+      .menu__body,
+      .menu__body::before {
+         inset-inline-start: 0;
+      }
 
-   .icon-menu span,
-   .icon-menu::before,
-   .icon-menu::after {
-      transition: all 0.3s;
-      content: "";
-      height: 0.125rem;
-      width: 100%;
-      background-color: #fff;
-   }
+      .icon-menu {
+         span {
+            width: 0;
+            height: 0;
+            margin: 0;
+         }
 
-   .open-menu .menu__body,
-   .open-menu .menu__body::before {
-      inset-inline-start: 0;
-   }
+         &::before {
+            transform: rotate(45deg) translateY(0.0938rem);
+         }
 
-   .open-menu .icon-menu span {
-      width: 0;
-      height: 0;
-      margin: 0;
-   }
-
-   .open-menu .icon-menu::before {
-      transform: rotate(45deg) translateY(0.0938rem);
-   }
-
-   .open-menu .icon-menu::after {
-      transform: rotate(-45deg) translateY(-0.0938rem);
+         &::after {
+            transform: rotate(-45deg) translateY(-0.0938rem);
+         }
+      }
    }
 }
 
