@@ -199,6 +199,9 @@ body {
          inset-inline-start: 0;
       }
 
+      body {
+         overflow: hidden;
+      }
       .icon-menu {
          span {
             width: 0;
@@ -433,7 +436,6 @@ body {
             margin-bottom: 3.125rem;
          }
       }
-      
    }
 
    &__items {
@@ -766,4 +768,3 @@ body {
       }
    }
 }
-
