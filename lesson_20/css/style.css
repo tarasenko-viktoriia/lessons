@@ -330,7 +330,7 @@ body {
 .icon-block__link img {
     inline-size: 1.125rem;
     block-size: 1.125rem;
-    object-fit: cover;
+    object-fit: contain;
 }
 .intro__bg {
     border-radius: 33.8125rem;
@@ -375,6 +375,7 @@ body {
 }
 .intro__button {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 .project-button {
@@ -422,14 +423,14 @@ body {
     background-color:  #F0F1F3;
 }
 .process__container{
-    display: flex;
-    justify-content: space-between;
     padding-block: 15.5rem 8.75rem;
+    display: flex;
     align-items: center;
-    gap: .9375rem;
+    column-gap: max(1.25rem, min(10vw, 8.9375rem));
+    row-gap: 1.25rem;
 }
 .block-text {
-    max-width: 39.185185%; /* 529/1350 */
+    flex: 1 0 40.075758%;
 }
 .block-text__title {
     color: #132238;
@@ -447,44 +448,62 @@ body {
     gap: 1rem;
 }
 .process__cards{
+    counter-reset: card-number;
+    flex: 1 1 49.090909%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0rem 1fr 0rem 1fr 0rem;
-    gap: 1.5rem;
-    grid-auto-rows: auto;
-    max-width: 40.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+    column-gap: 1.5rem;
+}
+.process__cards {
+    counter-reset: card-counter; 
+}
 
+.process__cards .card {
+    counter-increment: card-counter; 
+}
+
+.process__cards .card__title h4::before {
+    content: counter(card-counter) ".\00a0"; 
+    font-weight: 700;
 }
 .card {
-    border-radius: .75rem;
-    background-color: #FFF;
-    padding: 2rem;
+    counter-increment: card-number;
     overflow: hidden;
-    transition: box-shadow 0.3s ease;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+@media (min-width: 66.8738em) {
+    .card:nth-child(odd) {
+        margin-block-end: 1.5rem;
+    }
+}
+@media (min-width: 66.8738em) {
+    .card:nth-child(even) {
+        margin-block-start: 1.5rem;
+    }
 }
 .card__content {
-    aspect-ratio: 312 / 276;
-    height: 100%;
-    width: 100%;
-
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: .9375rem;
-    justify-content: space-between;
-}
+    gap: 2rem;
+    justify-content: space-between; 
+} 
 .card__img {
     display: inline-flex;
     border-radius: .375rem;
     background-color: rgba(237, 216, 255, 0.50);
     padding: 1.25rem;
     align-self: flex-start;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; 
 }
 .card__img img{
     inline-size: 2rem;
     block-size: 2rem;
-    object-fit: cover;
+    object-fit: contain;
 }
 .card__title {
     color: #132238;
@@ -588,9 +607,9 @@ body {
 }
 .blog::before{
     content: "";
-    border-radius: 871.213px;
+    border-radius: 54.4508rem;
     background: rgba(218, 77, 241, 0.40);
-    filter: blur(250px);
+    filter: blur(15.625rem);
     top: -25%;
     left: -32%;
     width: 50%;
@@ -601,9 +620,9 @@ body {
 }
 .blog::after {
     content: "";
-    border-radius: 1044.316px;
+    border-radius: 65.2698rem;
     background: rgba(196, 245, 233, 0.70);
-    filter: blur(300px);
+    filter: blur(18.75rem);
     top: -10%;
     right: -25%;
     width: 50%;
@@ -648,7 +667,7 @@ body {
 }
 .cards-blog__text h5{
     color: #333;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     line-height: 1.33; /* 133.333% */
 }
@@ -684,14 +703,14 @@ body {
     max-width: 40.5rem;
     border-radius: .375rem;
     background: #FFF;
-    border-left: 5px transparent solid;
+    border-left: .3125rem transparent solid;
     transition: all 0.3s ease;
     padding: 2rem 2rem 2rem 1.6875rem; 
     cursor: pointer;
 }
 .cards-services__item h4{
     color: #132238;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 1; /* 24px */
     margin-block-end: 1rem;
@@ -711,7 +730,7 @@ body {
 }
 .clients__list {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     animation: marquee 20s linear infinite;
     width: max-content;
 }
@@ -744,7 +763,7 @@ body {
 }
 .testimonial__text blockquote{
     color: #2B384C;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     line-height: 1.33; /* 133.333% */
     max-width: 54.5rem;
@@ -754,7 +773,7 @@ body {
 .testimonial__text p:first-of-type   {
     font-family: "Poppins", sans-serif;
     color: #000;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     line-height: 1.44; /* 144.444% */
 }
@@ -821,7 +840,7 @@ body {
     width: 200%;
     height: 200%;
     background: linear-gradient(182deg, rgba(255, 234, 198, 0.20) -157.44%, rgba(255, 234, 198, 0.14) 216.94%, rgba(255, 234, 198, 0.13) 216.94%);
-    filter: blur(350px);
+    filter: blur(21.875rem);
     z-index: -1;
 }
 .contacts__block {
@@ -1012,8 +1031,8 @@ body {
         box-shadow: 0rem .75rem 4rem 0rem rgba(28, 25, 25, 0.12);
     }
     .cards-services__item:hover {
-        box-shadow: 0px 32px 96px 0px rgba(28, 25, 25, 0.16);
-        border-left: 5px  #A53DFF solid;
+        box-shadow: 0rem 2rem 6rem 0rem rgba(28, 25, 25, 0.16);
+        border-left: .3125rem  #A53DFF solid;
     }
     .cards-contacts__item:hover{
         border-radius: .625rem;
@@ -1084,7 +1103,7 @@ body {
         line-height: 1.2;
     }
 }
-@media (max-width: 67.8125em) {
+@media (max-width: 68.25rem) {
     .hero__title {
         font-size: 3.5rem;
     }
@@ -1151,6 +1170,9 @@ body {
     }
     .button {
         align-self: center;
+    }
+    .process__cards {
+        row-gap: 1.5rem;
     }
 }
 @media (max-width: 59.0625em) {
@@ -1509,26 +1531,7 @@ body {
         padding: .9375rem;
     }
 }
-@media (min-width: 35.3125em) {
 
-    .card:nth-child(4n+1),
-    .card:nth-child(4n+3) {
-        grid-row: span 2;
-        aspect-ratio: 312 / 276;
-    }
-
-    .card:nth-child(4n+2) {
-        grid-row: 2 / 4;
-        grid-column: 2 / 3;
-        aspect-ratio: 312 / 276;
-    }
-
-    .card:nth-child(4n+4) {
-        grid-row: 4 / 6;
-        grid-column: 2 / 3;
-        aspect-ratio: 312 / 276;
-    }
-}
 @media (min-width: 2em) {
     .title-block--margin {
         margin-block-end: 0;
