@@ -136,7 +136,9 @@ body {
 .icon-menu {
     display: none;
 }
-
+.hero {
+    margin-bottom: 13.875rem;
+}
 .hero__container {
     display: flex;
     justify-content: space-between;
@@ -281,6 +283,9 @@ body {
 .logo-container, .footer__text {
     flex-basis: 13rem;
 }
+.intro {
+    margin-bottom: -6.25rem;
+}
 .intro__container {
     position: relative;
 }
@@ -289,8 +294,6 @@ body {
     background:  #FFF;
     box-shadow: 0rem 2.25rem 6.5625rem 0rem rgba(43, 56, 76, 0.10);
     padding: 7rem;
-    
-    transform: translateY(6.25rem);
 }
 .intro__block {
     display: flex;
@@ -372,6 +375,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    font-size: 18px;
+    line-height: 1.33; /* 133.333% */
 }
 .intro__button {
     display: flex;
@@ -431,6 +436,9 @@ body {
 }
 .block-text {
     flex: 1 0 40.075758%;
+}
+.block-text--width {
+    flex: 1 0 39.185185%; /* 529/1350 */
 }
 .block-text__title {
     color: #132238;
@@ -691,7 +699,8 @@ body {
 .services__block {
     display: flex;
     justify-content: space-between;
-    gap: .9375rem;
+    column-gap: max(1.25rem, min(10vw, 8.9375rem));
+    row-gap: .9375rem;
     align-items: center;
 }
 .services__cards {
@@ -755,7 +764,7 @@ body {
 }
 
 .testimonial {
-    padding-block-end: 2.5rem;
+    padding-block-end: 6.25rem;
 }
 .testimonial__text {
     text-align: center;
@@ -831,6 +840,7 @@ body {
 
 .contacts{
     position: relative;
+    margin-bottom: -3.75rem;
 }
 .contacts::after {
     content: "";
@@ -851,7 +861,6 @@ body {
     background: #FFF;
     box-shadow: 0rem 3.6875rem 7.75rem 0rem rgba(0, 0, 0, 0.12);
     padding: 5.5rem;
-    transform: translateY(3.75rem);
 }
 .contacts__text {
     display: flex;
@@ -1103,7 +1112,13 @@ body {
         line-height: 1.2;
     }
 }
-@media (max-width: 68.25rem) {
+@media (max-width: 68.25em) {
+    .hero {
+        margin-bottom: 6.25rem;
+    }
+    .intro__item {
+        font-size: 1rem;
+    }
     .hero__title {
         font-size: 3.5rem;
     }
@@ -1176,6 +1191,9 @@ body {
     }
 }
 @media (max-width: 59.0625em) {
+    .hero {
+        margin-bottom: 3.125rem;
+    }
     .hero__title {
         font-size: 3rem;
     }
@@ -1227,6 +1245,7 @@ body {
         text-align: center;
     }
     .cards-hero {
+        flex-wrap: wrap;
         gap: .625rem;
         justify-content: center;
     }
@@ -1423,7 +1442,7 @@ body {
         padding: 1.5625rem;
     }
     .testimonial {
-        padding-block-end: 0;
+        padding-block-end: 3.125rem;
     }
     .testimonial__text {
         margin-block-end: 2.1875rem;
@@ -1461,7 +1480,11 @@ body {
         display: flex;
         flex-direction: column;
     }
+    .contacts__container{
+        padding-inline: 0;
+    }
     .contacts__block {
+        border-radius: 0;
         padding: 1.5625rem;
     }
     .text>p, .form__text, .effect::placeholder  {
