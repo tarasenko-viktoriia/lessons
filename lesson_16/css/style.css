@@ -99,16 +99,19 @@ body {
     min-height: 80px;
     padding-block: 10px;
 }
-.header__logo {
-    display: flex;
-    max-width: 100%;
+.header__button{
     flex-basis: 152px;
-    position: relative;
-    z-index: 5;
+}
+.header__logo{
+    aspect-ratio: 152 / 48;
+    overflow: hidden;
     flex-shrink: 0;
 }
-.header__logo, .header__button{
-    flex-basis: 152px;
+
+.header__logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .menu, .nav {
     flex-basis: 515px;
@@ -237,6 +240,11 @@ body {
     gap: 16px;
     align-items: center;
 }
+.hero__img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
 .text-block > p{
     color:  rgba(255, 255, 255, 0.64);
 }
@@ -274,8 +282,8 @@ body {
     bottom: 6.04%;
     left: 8.23%;
     width: 100%;
-    height: auto;
-    object-fit: cover
+    height: 100%;
+    object-fit: contain
 }
 .image__block--girl {
     left: 56.5%;
@@ -293,7 +301,7 @@ body {
     left: 0;
     width: 100%;
     height: 88.196721%; /* 269/305 */
-    object-fit: cover;
+    object-fit: contain;
 }
 .image__strars {
     top: 7%;
@@ -305,8 +313,8 @@ body {
 }
 .image__strars img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
 }
 .image__cloud {
     position: absolute;
@@ -317,8 +325,8 @@ body {
 }
 .image__cloud img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
 }
 
 .image__page {
@@ -330,8 +338,8 @@ body {
 }
 .image__page img{
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
 }
 .image__arrow-big {
     position: absolute;
@@ -341,8 +349,8 @@ body {
 }
 .image__arrow-big img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
 }
 .image__arrow-small {
     position: absolute;
@@ -353,8 +361,8 @@ body {
 }
 .image__arrow-small img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
 }
 
 .menu__list-none {
@@ -606,6 +614,10 @@ body {
 		text-decoration: underline;
 		background-color: transparent;
 	}
+
+    .open-menu body{
+        overflow: hidden;
+    }
 
 	.open-menu .nav__body,
 	.open-menu .nav__body::before {
