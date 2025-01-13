@@ -205,7 +205,7 @@ body {
     transform: scale(1);
 }
 .contact__text {
-    padding-block: 15px;
+    padding-block: 75px;
 }
 
 .contact__title {
@@ -227,10 +227,16 @@ body {
     margin-bottom: 23px;
 }
 .contact__img {
-    max-width: 400px;
+    aspect-ratio: 338 / 192;
+    overflow: hidden;
 }
-.contact__img--margin {
-    max-width: 295px;
+.contact__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contact__img--size {
+    aspect-ratio: 295 / 396;
     margin-top: -50px;
     align-self: flex-end;
 }
@@ -345,14 +351,18 @@ body {
     flex-direction: column;
 }
 .team__img {
-    display: flex;
-    justify-content: center;
     border-radius: 6px;
     border: 1px solid #3A3C56;
-    min-height: 270px;
-    align-items: flex-end;
     margin-bottom: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    aspect-ratio: 1 / 1;
+}
+.team__img img{
     max-width: 100%;
+    height: 87.5%;
+    object-fit: contain;
 }
 .team__info > h4 {
     font-size: 24px;
@@ -376,10 +386,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 130px;
+    gap: 15px
 }
 .founder__text {
-    flex-basis: 470px;
+    flex: 0 1 40.17%;
 }
 .founder__text .title-block,
 .founder__text .founder__info {
@@ -401,10 +411,14 @@ body {
     
 }
 .founder__img {
-    flex: 1 1 570px;
+    aspect-ratio: 570 / 448;
+    overflow: hidden;
+    flex: 0 1 48.717%;
 }
 .founder__img > img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .founder__info > h5 {
     font-size: 20px;
@@ -463,14 +477,28 @@ body {
     border-radius: 12px;
     border: 1px solid #262626;
     background: #1A1A1A;
-    min-width: 253px;
     transition: transform 0.3s ease;
     cursor: pointer;
+
+    flex: 0 0 23%;
+    padding: 20px;
+    min-inline-size: 231px;
 }
 
 .item-cinema__image {
+    max-width: 320px;
     width: 100%;
-    margin-bottom: 20px;
+    aspect-ratio: 320 / 404;
+    min-inline-size: 207px;
+
+    margin-block-end: 1.25rem;
+}
+.item-cinema__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    background-color: #363636;
 }
 .cinema__info {
     display: flex;
@@ -796,9 +824,6 @@ body {
     .team {
         margin-bottom: 50px;
     }
-    .founder__img {
-        flex: 1 1 295px;
-    }
     .founder__text {
         flex-basis: 200px;
     }
@@ -821,6 +846,10 @@ body {
 
     .title-block>h3 {
         font-size: 24px;
+    }
+
+    .founder__img {
+        flex: 0 1 90%;
     }
 
 }
@@ -866,9 +895,6 @@ body {
         align-self: center;
         max-width: 100%;
         height: auto;
-    }
-    .founder__img {
-        flex: 1 1 200px;
     }
 
 }
