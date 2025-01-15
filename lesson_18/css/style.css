@@ -147,9 +147,10 @@ body {
 
 }
 @media (any-hover: hover){
-	.items-grid__card:hover .items-grid__content img:hover{
+	.items-grid__card:hover .items-grid__content img{
 		transform: scale(1.05);
 		transition: transform 0.3s;
+		will-change: transform;
 	}
 }
 
