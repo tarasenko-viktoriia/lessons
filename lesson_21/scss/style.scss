@@ -224,23 +224,19 @@ body {
    &__container {
       padding-inline: 0;
    }
-   &__img {
+   &__block {
       position: relative;
-      min-height: 52.1875rem;
-      border-radius: 0.75rem;
+   }
+   &__img {
       overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 3.125rem 3.125rem 1.25rem 3.125rem;
+      border-radius: 0.75rem;
+      position: relative;
 
-      @media (max-width: 64em) {
-         min-height: 44.3125rem;
-      }
-      @media (max-width: 46.5em) {
-         margin-inline: 0.9375rem;
-         min-height: 29.25rem;
-         padding: 1.5rem 1rem;
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: contain;
+         border-radius: 0.75rem;
       }
 
       &::before {
@@ -250,11 +246,18 @@ body {
          left: 0;
          width: 100%;
          height: 100%;
-         background: linear-gradient(0deg, #141414 0%, rgba(20, 20, 20, 0) 100%), url(../img/hero-img.avif);
+         background: linear-gradient(0deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
          background-size: cover;
          background-position: center;
          background-repeat: no-repeat;
-         z-index: -1;
+      }
+
+      @media (max-width: 64em) {
+   
+      }
+      @media (max-width: 46.5em) {
+         
+         padding: 1.5rem 1rem;
       }
    }
    &__text {
@@ -293,6 +296,16 @@ body {
             display: none;
          }
       }
+   }
+}
+.block-hero{
+   position: relative;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   &__text {
+      position: absolute;
+      padding: 2.5rem 2.5rem 1rem 2.5rem;
    }
 }
 .buttons {
@@ -413,22 +426,6 @@ body {
          padding: 0;
       }
 
-      &::before {
-         position: absolute;
-         top: -1.5rem;
-         content: "Movies";
-         border-radius: 0.5rem;
-         background: #e50000;
-         padding: 0.625rem 1.5rem;
-         font-size: 1.25rem;
-         font-weight: 600;
-         line-height: 1.5;
-
-         @media (max-width: 46.5em) {
-            display: none;
-         }
-      }
-
       &:not(:last-child) {
          margin-bottom: 9.375rem;
 
@@ -483,7 +480,20 @@ body {
       }
    }
 }
+.category {
+   position: absolute;
+   top: -1.5rem;
+   border-radius: 0.5rem;
+   background: #e50000;
+   padding: 0.625rem 1.5rem;
+   font-size: 1.25rem;
+   font-weight: 600;
+   line-height: 1.5;
 
+   @media (max-width: 46.5em) {
+      display: none;
+   }
+}
 .item-cinema {
    padding: 1.25rem;
    border-radius: 0.75rem;
